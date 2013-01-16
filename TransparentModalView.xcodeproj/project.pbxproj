@@ -18,6 +18,8 @@
 		5A4A90C716A5A48900030E55 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A4A90C616A5A48900030E55 /* Default-568h@2x.png */; };
 		5A4A90CA16A5A48900030E55 /* TRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A90C916A5A48900030E55 /* TRViewController.m */; };
 		5A4A90CD16A5A48900030E55 /* TRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A4A90CB16A5A48900030E55 /* TRViewController.xib */; };
+		5AF54EC316A6EFC400FCAC7F /* TRContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF54EC216A6EFC400FCAC7F /* TRContainerViewController.m */; };
+		5AF54EC616A6F39D00FCAC7F /* TRModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF54EC516A6F39D00FCAC7F /* TRModalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,10 @@
 		5A4A90C816A5A48900030E55 /* TRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRViewController.h; sourceTree = "<group>"; };
 		5A4A90C916A5A48900030E55 /* TRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRViewController.m; sourceTree = "<group>"; };
 		5A4A90CC16A5A48900030E55 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TRViewController.xib; sourceTree = "<group>"; };
+		5AF54EC116A6EFC400FCAC7F /* TRContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRContainerViewController.h; sourceTree = "<group>"; };
+		5AF54EC216A6EFC400FCAC7F /* TRContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRContainerViewController.m; sourceTree = "<group>"; };
+		5AF54EC416A6F39D00FCAC7F /* TRModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRModalViewController.h; sourceTree = "<group>"; };
+		5AF54EC516A6F39D00FCAC7F /* TRModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRModalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,7 @@
 		5A4A90B616A5A48900030E55 /* TransparentModalView */ = {
 			isa = PBXGroup;
 			children = (
+				5AF54EBF16A6EF1C00FCAC7F /* Class */,
 				5A4A90BF16A5A48900030E55 /* TRAppDelegate.h */,
 				5A4A90C016A5A48900030E55 /* TRAppDelegate.m */,
 				5A4A90C816A5A48900030E55 /* TRViewController.h */,
@@ -105,6 +112,33 @@
 				5A4A90C616A5A48900030E55 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5AF54EBD16A6EF0900FCAC7F /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				5AF54EC116A6EFC400FCAC7F /* TRContainerViewController.h */,
+				5AF54EC216A6EFC400FCAC7F /* TRContainerViewController.m */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		5AF54EBF16A6EF1C00FCAC7F /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				5AF54EC016A6EF5E00FCAC7F /* BaseViewController */,
+				5AF54EBD16A6EF0900FCAC7F /* Container */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		5AF54EC016A6EF5E00FCAC7F /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5AF54EC416A6F39D00FCAC7F /* TRModalViewController.h */,
+				5AF54EC516A6F39D00FCAC7F /* TRModalViewController.m */,
+			);
+			path = BaseViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +211,8 @@
 				5A4A90BD16A5A48900030E55 /* main.m in Sources */,
 				5A4A90C116A5A48900030E55 /* TRAppDelegate.m in Sources */,
 				5A4A90CA16A5A48900030E55 /* TRViewController.m in Sources */,
+				5AF54EC316A6EFC400FCAC7F /* TRContainerViewController.m in Sources */,
+				5AF54EC616A6F39D00FCAC7F /* TRModalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +329,7 @@
 				5A4A90D216A5A48900030E55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
